@@ -66,5 +66,23 @@ $(document).ready(function(){
         // results.innerHTML="";
       }
     }
+    if (run>1) {
+      p1();
+      // alert("Turn for player 2");
+    }
+    else if (tally>= 50){
+      // alert("Player 1 wins!")
+      results.innerHTML=("Great Job; Player 2  wins")
+      // results.innerHTML = ("You win");
+      p2();
+      // tally1.innerHTML = tally;
+      
+      // resetValue();
+    }
+    else {
+      p2();
+    }
+  })
+})
 
     
