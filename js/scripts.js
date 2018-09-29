@@ -75,6 +75,10 @@ $(document).ready(function(){
       p2();
     }
   })
+  $("#show").click(function(){
+    $("#instructions").toggle();
+  })
 })
+
 
     

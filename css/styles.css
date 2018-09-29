@@ -3,6 +3,18 @@
 }
 #instructions{
   display:none;
+  position:relative;
+  align-items:center;
+  left:300px;
+  background-color:beige;
+  width:500px;
+}
+#instructions>h2{
+  color:green;
+  font-weight: bold;
+  text-decoration: green underline;
+  position:relative;
+  left:150px;
 }
 body{
 background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); 
