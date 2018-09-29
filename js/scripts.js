@@ -39,4 +39,32 @@ $(document).ready(function(){
       }
     }
 
+  // Player 2 functionality
+    function p2(){
+      score1.innerHTML=0;
+      tally1.innerHTML=0;
+      score2.innerHTML=gameRound;
+      tally2.innerHTML=gameRound+run;
+      $("#hold").click(function(){
+        event.preventDefault();
+        tally=gameRound*2;
+
+        tally2.innerHTML=tally;
+      })
+      
+      if (run<=1){
+        // alert("Turn for player 1")
+        p1();
+      }
+      else if(tally>=50||tally2.innerHTML>=50){
+        alert("Great Job; Player 2 wins")
+        results.innerHTML=("Great Job; Player 2 wins")
+      }
+      else{
+        p2();
+        alert("Game over");
+        // results.innerHTML="";
+      }
+    }
+
     
