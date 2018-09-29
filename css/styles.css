@@ -20,3 +20,22 @@ h1, .h2 {
   left: 100px;
   font-size:large;
 }
+button{
+  position:relative;
+  left: 40%;
+  top:80px;
+}
+#result{
+  text-align:center;
+  position: relative;
+  top:100px;
+  right:70px;
+  
+}
+.result{
+  text-decoration: rgb(22, 235, 57) underline;
+}
+#results{
+  color:rgb(4, 0, 255);
+  text-decoration:none;
+}
