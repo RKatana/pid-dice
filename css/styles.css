@@ -4,7 +4,14 @@
 #instructions{
   display:none;
 }
-body{background: #A770EF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body{
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); 
+}
+h1, .h2 {
+  text-align: center;
+}
+.row{
+  border: 3px dashed rgb(22, 20, 18);
+  border-radius: 10px;
+  padding-bottom: 200px;
 }

@@ -9,7 +9,7 @@ function roll() {
 }
 // User interface
 $(document).ready(function(){
-  alert("Start Game!")
+  // alert("Start Game!")
   $("#run").click(function(event){
     event.preventDefault();
     var tally=roll()
@@ -22,7 +22,7 @@ $(document).ready(function(){
       tally2.innerHTML=0;
       $("#hold").click(function(event){
         event.preventDefault();
-        tally=run*2;
+        tally=roll();
 
         tally1.innerHTML=tally;
       })
@@ -53,7 +53,6 @@ $(document).ready(function(){
       })
       
       if (run<=1){
-        // alert("Turn for player 1")
         p1();
       }
       else if(tally>=50||tally2.innerHTML>=50){
@@ -63,21 +62,14 @@ $(document).ready(function(){
       else{
         p2();
         alert("Game over");
-        // results.innerHTML="";
       }
     }
     if (run>1) {
       p1();
-      // alert("Turn for player 2");
     }
     else if (tally>= 50){
-      // alert("Player 1 wins!")
-      results.innerHTML=("Great Job; Player 2  wins")
-      // results.innerHTML = ("You win");
+      results.innerHTML=("Great Job; Player 2  wins");
       p2();
-      // tally1.innerHTML = tally;
-      
-      // resetValue();
     }
     else {
       p2();
