@@ -15,3 +15,8 @@ h1, .h2 {
   border-radius: 10px;
   padding-bottom: 200px;
 }
+#game1, #game2{
+  position:relative;
+  left: 100px;
+  font-size:large;
+}
