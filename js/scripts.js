@@ -2,9 +2,9 @@
 var gameRound=0;
 var Check =0;
 player2=0;
-var run = (Math.floor(Math.random()*2)+1);
+var run = (Math.floor(Math.random()*6)+1);
 function roll() {
-  var run = (Math.floor(Math.random()*2)+1);
+  var run = (Math.floor(Math.random()*6)+1);
   return(gameRound+=run);
 }
 // User interface
@@ -12,7 +12,15 @@ $(document).ready(function(){
   // alert("Start Game!")
   $("#run").click(function(event){
     event.preventDefault();
-    var tally=roll()
+    var tally=run
+    roll()
+    if(run!=1){
+      console.log('Continue Playing')
+    }else{
+      console.log('Player 2 turn')
+    }
+
+
 
 // Player 1 functionality
     function p1(){
@@ -22,9 +30,9 @@ $(document).ready(function(){
       tally2.innerHTML=0;
       $("#hold").click(function(event){
         event.preventDefault();
-        tally=roll();
+        tally=gameRound*2;
 
-        tally1.innerHTML=tally;
+        tally1.innerHTML=tally*2;
       })
 
       if(run>1){
@@ -49,7 +57,7 @@ $(document).ready(function(){
         event.preventDefault();
         tally=gameRound*2;
 
-        tally2.innerHTML=tally;
+        tally2.innerHTML=tally*2;
       })
       
       if (run<=1){
@@ -76,7 +84,7 @@ $(document).ready(function(){
     }
   })
   $("#show").click(function(){
-    $("#instructions").toggle();
+    $("#instructions").slideToggle();
   })
 })
 
